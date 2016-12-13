@@ -1,16 +1,16 @@
 language: ruby
 
 rvm:
+  - 2.3
   - 2.2
   - 2.1
   - 2.0.0
-  - 1.9.3
   - ruby-head
-  - jruby-19mode
+  - jruby-9.1.5.0
 
 bundler_args: --without guard
 
 matrix:
   allow_failures:
     - rvm: ruby-head
-    - rvm: jruby-19mode
+    - rvm: jruby-9.1.5.0
